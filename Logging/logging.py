@@ -7,7 +7,7 @@ def config_logging():
                         format='%(asctime)s | %(name)s | %(levelname)s | %(message)s',)
 
     # Работа с файлом логирования
-    file_handler = logging.FileHandler('sp_log.txt')
+    file_handler = logging.FileHandler('sp_log.txt', mode='w')
     file_handler.setLevel(logging.INFO)
     formatter = logging.Formatter('%(asctime)s | %(name)s | %(levelname)s | %(message)s')
     file_handler.setFormatter(formatter)
