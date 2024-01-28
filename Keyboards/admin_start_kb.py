@@ -1,17 +1,17 @@
 from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 stat_info_button = InlineKeyboardButton(
-    text = 'Статистика',
+    text = '🧮 Статистика',
         callback_data='stat'
     )
 
 add_assistant_button = InlineKeyboardButton(
-    text = 'Добавление ассистентов',
+    text = '🤓 Добавление ассистентов',
         callback_data = 'add'
     )
 
 parsing_button = InlineKeyboardButton(
-    text = 'Парсинг',
+    text = '💹 Парсинг',
         callback_data = 'parsing'
     )
 

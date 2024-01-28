@@ -1,4 +1,8 @@
-2024-01-28 12:17:24,023 | aiogram.dispatcher | INFO | Start polling
-2024-01-28 12:17:24,077 | aiogram.dispatcher | INFO | Run polling for bot @someparsertgbot id=6451541829 - 'ParserBot'
-2024-01-28 12:18:41,487 | aiogram.dispatcher | INFO | Polling stopped
-2024-01-28 12:18:41,487 | aiogram.dispatcher | INFO | Polling stopped for bot @someparsertgbot id=6451541829 - 'ParserBot'
+2024-01-28 21:52:10,380 | aiogram.dispatcher | INFO | Start polling
+2024-01-28 21:52:10,437 | aiogram.dispatcher | INFO | Run polling for bot @someparsertgbot id=6451541829 - 'ParserBot'
+2024-01-28 21:52:19,650 | aiogram.event | INFO | Update id=957036865 is handled. Duration 202 ms by bot id=6451541829
+2024-01-28 21:52:23,594 | aiogram.event | INFO | Update id=957036866 is handled. Duration 187 ms by bot id=6451541829
+2024-01-28 21:52:25,525 | aiogram.event | INFO | Update id=957036867 is not handled. Duration 0 ms by bot id=6451541829
+2024-01-28 21:52:26,455 | aiogram.event | INFO | Update id=957036868 is not handled. Duration 0 ms by bot id=6451541829
+2024-01-28 21:52:28,335 | aiogram.dispatcher | INFO | Polling stopped
+2024-01-28 21:52:28,336 | aiogram.dispatcher | INFO | Polling stopped for bot @someparsertgbot id=6451541829 - 'ParserBot'

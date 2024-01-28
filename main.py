@@ -3,6 +3,7 @@ import logging
 
 from aiogram import Bot, Dispatcher
 from aiogram.filters import CommandStart, StateFilter, Command
+from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import default_state
 from aiogram.fsm.storage.memory import MemoryStorage
 from aiogram.types import BotCommand, Message
@@ -10,6 +11,7 @@ from aiogram.types import BotCommand, Message
 from Logging.logging import config_logging
 from Config.config import allowed_admin_ids, allowed_assistant_ids, Config, get_config
 from Keyboards.admin_start_kb import admin_start_kb
+from Keyboards.assistant_kb import assistant_start_kb
 
 
 # Конфигурация логирования и запуск бота
@@ -34,7 +36,26 @@ async def main():
                                    text=f'Вы в режиме администратора\n\n'
                                         f'Выберите действие', reply_markup=admin_start_kb
             )
+        elif assistant in allowed_assistant_ids:
+            await bot.send_message(message.from_user.id,
+                                   text=f'Режим ассистента', reply_markup=assistant_start_kb)
+        else:
+            await bot.send_message(message.from_user.id,
+                                   text=f'Вы вошли в режиме пользователя')
 
+    @dp.message(Command(commands='cancel'), StateFilter(default_state))
+    async def process_cancel_command(message: Message):
+        await message.answer(
+            text='В данный момент отменять и прерывать нечего\n\n'
+                 'Воспользуйтесь командой /start для выбора действия.'
+        )
+
+    @dp.message(Command(commands='cancel'), ~StateFilter(default_state))
+    async def process_cancel_command_state(message: Message, state: FSMContext):
+        await message.answer(
+            text='Вы вышли из заполнения данных\n\n'
+                 'Воспользуйтесь командой /start для выбора действия.')
+        await state.clear()
 
 
     # Пропуск апдейтов и запуск пулинга
