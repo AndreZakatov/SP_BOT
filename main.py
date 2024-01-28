@@ -8,7 +8,8 @@ from aiogram.fsm.storage.memory import MemoryStorage
 from aiogram.types import BotCommand, Message
 
 from Logging.logging import config_logging
-from Config.config import allowed_admin_ids, allowed_assistant_ids, Config
+from Config.config import allowed_admin_ids, allowed_assistant_ids, Config, get_config
+from Keyboards.admin_start_kb import admin_start_kb
 
 
 # Конфигурация логирования и запуск бота
@@ -16,7 +17,7 @@ async def main():
     logging.info('Бот запущен!')
 
     # Загрузка конфигурации в переменную
-    config: Config = config_logging()
+    config: Config = get_config()
 
     # Инициализация хранилища
     storage = MemoryStorage()
@@ -29,7 +30,10 @@ async def main():
         admin_id = message.from_user.id
         assistant = message.from_user.id
         if admin_id in allowed_admin_ids:
-            await message.answer()
+            await bot.send_message(message.from_user.id,
+                                   text=f'Вы в режиме администратора\n\n'
+                                        f'Выберите действие', reply_markup=admin_start_kb
+            )
 
 
 

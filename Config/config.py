@@ -17,10 +17,14 @@ class Config:
 def load_env(path: str | None = None) -> Config:
     env = Env()
     env.read_env(path)
-    return Config(tg_bot=TgBot(token=env("BOT_TOKEN")))
+    return Config(tg_bot=TgBot(token=env("API_TOKEN")))
 
 # загрузка переменных окружение из .env
 load_dotenv()
+
+# Функция, возвращающая объект Config
+def get_config() -> Config:
+    return load_env()
 
 # Получение значений переменной ADMIN_IDS
 admin_ids_str = os.getenv('ADMIN_IDS').replace('[', '').replace(']', '').replace(',', '')

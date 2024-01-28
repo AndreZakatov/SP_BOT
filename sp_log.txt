@@ -1,0 +1,4 @@
+2024-01-28 12:17:24,023 | aiogram.dispatcher | INFO | Start polling
+2024-01-28 12:17:24,077 | aiogram.dispatcher | INFO | Run polling for bot @someparsertgbot id=6451541829 - 'ParserBot'
+2024-01-28 12:18:41,487 | aiogram.dispatcher | INFO | Polling stopped
+2024-01-28 12:18:41,487 | aiogram.dispatcher | INFO | Polling stopped for bot @someparsertgbot id=6451541829 - 'ParserBot'
