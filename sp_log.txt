@@ -1,8 +1,6 @@
-2024-01-28 21:52:10,380 | aiogram.dispatcher | INFO | Start polling
-2024-01-28 21:52:10,437 | aiogram.dispatcher | INFO | Run polling for bot @someparsertgbot id=6451541829 - 'ParserBot'
-2024-01-28 21:52:19,650 | aiogram.event | INFO | Update id=957036865 is handled. Duration 202 ms by bot id=6451541829
-2024-01-28 21:52:23,594 | aiogram.event | INFO | Update id=957036866 is handled. Duration 187 ms by bot id=6451541829
-2024-01-28 21:52:25,525 | aiogram.event | INFO | Update id=957036867 is not handled. Duration 0 ms by bot id=6451541829
-2024-01-28 21:52:26,455 | aiogram.event | INFO | Update id=957036868 is not handled. Duration 0 ms by bot id=6451541829
-2024-01-28 21:52:28,335 | aiogram.dispatcher | INFO | Polling stopped
-2024-01-28 21:52:28,336 | aiogram.dispatcher | INFO | Polling stopped for bot @someparsertgbot id=6451541829 - 'ParserBot'
+2024-01-29 14:32:34,740 | aiogram.dispatcher | INFO | Start polling
+2024-01-29 14:32:34,795 | aiogram.dispatcher | INFO | Run polling for bot @someparsertgbot id=6451541829 - 'ParserBot'
+2024-01-29 14:34:18,501 | aiogram.event | INFO | Update id=957036869 is handled. Duration 355 ms by bot id=6451541829
+2024-01-29 14:34:26,209 | aiogram.dispatcher | WARNING | Received SIGINT signal
+2024-01-29 14:34:26,209 | aiogram.dispatcher | INFO | Polling stopped for bot @someparsertgbot id=6451541829 - 'ParserBot'
+2024-01-29 14:34:26,210 | aiogram.dispatcher | INFO | Polling stopped
