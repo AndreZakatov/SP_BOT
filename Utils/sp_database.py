@@ -82,13 +82,6 @@ class Database:
         self.create_table_parsing()
         self.create_table_statistics()
 
-    def add_admins(self, telegram_id):
-        self.cursor.execute("""
-            INSERT INTO  admins (admin_id) 
-            VALUES (?)
-            """, (telegram_id,))
-        self.conn.commit()
-
     def add_assistant(self, telegram_id):
         self.cursor.execute("""
             INSERT INTO assistant (assistant_id) 
@@ -101,8 +94,3 @@ class Database:
         DELETE FROM assistant WHERE telegram_id = ?
         """, (telegram_id,))
         self.conn.commit()
-
-
-if __name__ == "__main__":
-    db = Database('sp_database.db')
-    db.create_all_table()
