@@ -3,6 +3,8 @@ from dataclasses import dataclass
 from environs import Env
 from dotenv import load_dotenv
 
+
+
 @dataclass
 class TgBot:
     token: str  # Токен для доступа к телеграм боту
@@ -26,10 +28,8 @@ load_dotenv()
 def get_config() -> Config:
     return load_env()
 
-# Получение значений переменной ADMIN_IDS
-admin_ids_str = os.getenv('ADMIN_IDS').replace('[', '').replace(']', '').replace(',', '')
+
+admin_ids_str = str(os.getenv('ADMIN_IDS')).replace('[', '').replace(']', '').replace(',', '')
 allowed_admin_ids = [int(admin_id) for admin_id in admin_ids_str.split()]
-
-
-assistant_ids_str = os.getenv('ASSISTANT_IDS').replace('[', '').replace(']', '').replace(',', '')
-allowed_assistant_ids = [int(assistant_id) for assistant_id in assistant_ids_str.split()]
+assistant_ids_str = str(os.getenv('ASISTANT_IDS')).replace('[', '').replace(']', '').replace(',', '')
+allowed_assistant_ids = [int(admin_id) for admin_id in admin_ids_str.split()]

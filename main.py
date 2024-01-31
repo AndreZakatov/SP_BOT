@@ -9,9 +9,10 @@ from aiogram.fsm.storage.memory import MemoryStorage
 from aiogram.types import BotCommand, Message
 
 from Logging.logging import config_logging
-from Config.config import allowed_admin_ids, allowed_assistant_ids, Config, get_config
+from Config.config import allowed_admin_ids, Config, get_config, allowed_assistant_ids
 from Keyboards.admin_start_kb import admin_start_kb
 from Keyboards.assistant_kb import assistant_start_kb
+from Handlers.admin_add_assistant import router as admin_actions_router
 
 
 # Конфигурация логирования и запуск бота
@@ -26,6 +27,10 @@ async def main():
 
     bot: Bot = Bot(token=config.tg_bot.token, parse_mode='HTML')
     dp: Dispatcher = Dispatcher(storage=storage)
+
+
+    # Регистрация роутеров в диспатчере
+    dp.include_router(admin_actions_router)
 
     @dp.message(CommandStart(), StateFilter(default_state))
     async def process_start_command(message: Message):
