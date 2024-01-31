@@ -6,7 +6,7 @@ stat_info_button = InlineKeyboardButton(
 )
 
 add_assistant_button = InlineKeyboardButton(
-    text='🤓 Добавление ассистентов',
+    text='🤓 Добавить/удалить ассистента',
     callback_data='add'
 )
 
