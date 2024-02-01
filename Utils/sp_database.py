@@ -98,7 +98,7 @@ class Database:
 
     def delete_assistant(self, telegram_id):
         self.cursor.execute("""
-        DELETE FROM assistant WHERE telegram_id = ?
+        DELETE FROM assistant WHERE assistant_id = ?
         """, (telegram_id,))
         self.conn.commit()
 

@@ -23,10 +23,17 @@ async def process_delete_assisted(message: Message, state: FSMContext):
     await state.set_state(Delete.delete)
 
 
-async def process_delete_good_id(message: Message):
-    assisted_id = message.text
-    if assisted_id.isdigit():
-        db.delete_assistant(assisted_id)
-        await message.answer(f'Ассистент с id {assisted_id} удален в БД')
+async def process_delete_good_id(message: Message, state: FSMContext):
+    if message.text.isdigit():
+        await state.update_data(id_add=message.text)
+        data = await state.get_data()
+        add_id = data.get('id_add')
+        db.delete_assistant(add_id)
+        await message.answer(
+            text=f'Ассистент с ID{add_id} удален'
+        )
+        await state.clear()
     else:
-        await message.answer('Для удаления ID указан не корректно!')
+        await message.answer(
+            text=f'{message.text} удаление является не корректным'
+        )
