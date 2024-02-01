@@ -1,18 +1,14 @@
 import asyncio
 import logging
 
-from aiogram import Bot, Dispatcher
-from aiogram.filters import CommandStart, StateFilter, Command
-from aiogram.fsm.context import FSMContext
-from aiogram.fsm.state import default_state
+from aiogram import Bot, Dispatcher, F
 from aiogram.fsm.storage.memory import MemoryStorage
-from aiogram.types import BotCommand, Message
 
-from Logging.logging import config_logging
-from Config.config import allowed_admin_ids, Config, get_config, allowed_assistant_ids
-from Keyboards.admin_start_kb import admin_start_kb
-from Keyboards.assistant_kb import assistant_start_kb
-from Handlers.admin_add_assistant import router as admin_actions_router
+from Config.config import Config, get_config
+from Handlers.start_handler import get_start
+from Handlers.admin_add_assistant import process_add_assisted, process_add_good_id
+from Handlers.admin_delete_assisted import process_delete_assisted, process_delete_good_id
+from aiogram.filters import Command
 
 
 # Конфигурация логирования и запуск бота
@@ -28,40 +24,14 @@ async def main():
     bot: Bot = Bot(token=config.tg_bot.token, parse_mode='HTML')
     dp: Dispatcher = Dispatcher(storage=storage)
 
-
-    # Регистрация роутеров в диспатчере
-    dp.include_router(admin_actions_router)
-
-    @dp.message(CommandStart(), StateFilter(default_state))
-    async def process_start_command(message: Message):
-        admin_id = message.from_user.id
-        assistant = message.from_user.id
-        if admin_id in allowed_admin_ids:
-            await bot.send_message(message.from_user.id,
-                                   text=f'Вы в режиме администратора\n\n'
-                                        f'Выберите действие', reply_markup=admin_start_kb
-            )
-        elif assistant in allowed_assistant_ids:
-            await bot.send_message(message.from_user.id,
-                                   text=f'Режим ассистента', reply_markup=assistant_start_kb)
-        else:
-            await bot.send_message(message.from_user.id,
-                                   text=f'Вы вошли в режиме пользователя')
-
-    @dp.message(Command(commands='cancel'), StateFilter(default_state))
-    async def process_cancel_command(message: Message):
-        await message.answer(
-            text='В данный момент отменять и прерывать нечего\n\n'
-                 'Воспользуйтесь командой /start для выбора действия.'
-        )
-
-    @dp.message(Command(commands='cancel'), ~StateFilter(default_state))
-    async def process_cancel_command_state(message: Message, state: FSMContext):
-        await message.answer(
-            text='Вы вышли из заполнения данных\n\n'
-                 'Воспользуйтесь командой /start для выбора действия.')
-        await state.clear()
-
+    # Старт
+    dp.message.register(get_start, Command(commands='start'))
+    # Добавление ассистента
+    dp.message.register(process_add_assisted, F.text=='Добавить ассистента')
+    dp.message.register(process_add_good_id)
+    # Удаление ассистента
+    dp.message.register(process_delete_assisted, F.text=='Удалить ассистента')
+    dp.message.register(process_delete_good_id)
 
     # Пропуск апдейтов и запуск пулинга
     await bot.delete_webhook(drop_pending_updates=True)

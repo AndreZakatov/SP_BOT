@@ -1,22 +1,19 @@
-from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup
+from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
 
-stat_info_button = InlineKeyboardButton(
-    text='🧮 Статистика',
-    callback_data='stat'
-)
 
-add_assistant_button = InlineKeyboardButton(
-    text='🤓 Добавить/удалить ассистента',
-    callback_data='add'
-)
-
-parsing_button = InlineKeyboardButton(
-    text='💹 Парсинг',
-    callback_data='parsing'
-)
-
-admin_kb: list[list[InlineKeyboardButton]] = [
-    [stat_info_button, add_assistant_button, parsing_button],
-]
-
-admin_start_kb = InlineKeyboardMarkup(inline_keyboard=admin_kb)
+admin_start_kb = ReplyKeyboardMarkup(keyboard=[
+    [
+        KeyboardButton(
+            text="Парсинг"
+        ),
+        KeyboardButton(
+            text="Добавить ассистента"
+        ),
+        KeyboardButton(
+            text='Удалить ассистента'
+        ),
+        KeyboardButton(
+            text="Статистика"
+        )
+    ]
+], resize_keyboard=True, one_time_keyboard=True)

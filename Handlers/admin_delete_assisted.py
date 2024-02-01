@@ -2,7 +2,7 @@ import os
 
 from aiogram.fsm.context import FSMContext
 from aiogram.types import Message
-from State.register import InputId
+from State.register import Delete
 from Utils.sp_database import Database
 
 # Получаем текущую рабочую директорию
@@ -16,19 +16,17 @@ db_path = os.path.join(current_directory, relative_path)
 db = Database(db_path)
 
 
-async def process_add_assisted(message: Message, state: FSMContext):
+async def process_delete_assisted(message: Message, state: FSMContext):
     await message.answer(
-        text='Введите id для добавления ассистента'
+        text='Введите id для удаления ассистента'
     )
-    await state.set_state(InputId.id_assist)
+    await state.set_state(Delete.delete)
 
 
-async def process_add_good_id(message: Message, state: FSMContext):
+async def process_delete_good_id(message: Message):
     assisted_id = message.text
     if assisted_id.isdigit():
-        db.add_assistant(assisted_id)
-        await message.answer(f'Ассистент с id {assisted_id} добавлен в БД')
+        db.delete_assistant(assisted_id)
+        await message.answer(f'Ассистент с id {assisted_id} удален в БД')
     else:
-        await message.answer('Для добавления ID указан не корректно')
-    await state.clear()
-
+        await message.answer('Для удаления ID указан не корректно!')

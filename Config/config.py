@@ -4,7 +4,6 @@ from environs import Env
 from dotenv import load_dotenv
 
 
-
 @dataclass
 class TgBot:
     token: str  # Токен для доступа к телеграм боту
@@ -21,8 +20,10 @@ def load_env(path: str | None = None) -> Config:
     env.read_env(path)
     return Config(tg_bot=TgBot(token=env("API_TOKEN")))
 
+
 # загрузка переменных окружение из .env
 load_dotenv()
+
 
 # Функция, возвращающая объект Config
 def get_config() -> Config:
