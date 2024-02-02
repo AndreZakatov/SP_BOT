@@ -102,6 +102,13 @@ class Database:
         """, (telegram_id,))
         self.conn.commit()
 
+    def check_assisted_in_db(self, telegram_id):
+        self.cursor.execute("""
+        SELECT * FROM assistant WHERE assistant_id = ?
+        """, (telegram_id,))
+        result = self.cursor.fetchone()
+        return result is not None
+
 
 if __name__ == "__main__":
     db = Database('sp_database.db')

@@ -25,14 +25,19 @@ async def process_add_assisted(message: Message, state: FSMContext):
 
 async def process_add_good_id(message: Message, state: FSMContext):
     if message.text.isdigit():
-        await state.update_data(id_add=message.text)
-        data = await state.get_data()
-        add_id = data.get('id_add')
-        db.add_assistant(add_id)
-        await message.answer(
-            text=f'Ассистент с ID{add_id} добавлен'
-        )
-        await state.clear()
+        if not db.check_assisted_in_db(message.text):
+            await state.update_data(id_add=message.text)
+            data = await state.get_data()
+            add_id = data.get('id_add')
+            db.add_assistant(add_id)
+            await message.answer(
+                text=f'Ассистент с ID{add_id} добавлен'
+            )
+            await state.clear()
+        else:
+            await message.answer(
+                text=f'Ассистент с ID{message.text} уже в базе данных'
+            )
     else:
         await message.answer(
             text=f'{message.text} добавление является не корректным'
