@@ -31,16 +31,18 @@ async def process_add_good_id(message: Message, state: FSMContext):
             add_id = data.get('id_add')
             db.add_assistant(add_id)
             await message.answer(
-                text=f'Ассистент с ID{add_id} добавлен'
+                text=f'Ассистент с ID: {add_id} добавлен.'
+
             )
             await state.clear()
         else:
             await message.answer(
-                text=f'Ассистент с ID{message.text} уже в базе данных'
+                text=f'Ассистент с ID: {message.text} уже в базе данных.'
             )
     else:
         await message.answer(
-            text=f'{message.text} добавление является не корректным'
+            text=f'<{message.text}> не является числом\n\n'
+                 f'Введите id ассистента в правильном формате для добавления.'
         )
 
 
