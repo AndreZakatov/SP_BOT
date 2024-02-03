@@ -12,7 +12,6 @@ from aiogram.filters import Command
 from State.register import Delete, InputId
 
 
-
 # Конфигурация логирования и запуск бота
 async def main():
     logging.info('Бот запущен!')
@@ -29,10 +28,10 @@ async def main():
     # Старт
     dp.message.register(get_start, Command(commands='start'))
     # Добавление ассистента
-    dp.message.register(process_add_assisted, F.text=='Добавить ассистента')
+    dp.message.register(process_add_assisted, F.text == 'Добавить ассистента')
     dp.message.register(process_add_good_id, InputId.id_assist)
     # Удаление ассистента
-    dp.message.register(process_delete_assisted, F.text=='Удалить ассистента')
+    dp.message.register(process_delete_assisted, F.text == 'Удалить ассистента')
     dp.message.register(process_delete_good_id, Delete.delete)
 
     # Пропуск апдейтов и запуск пулинга

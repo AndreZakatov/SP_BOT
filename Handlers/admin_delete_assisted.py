@@ -1,4 +1,5 @@
 import os
+import html
 
 from aiogram.fsm.context import FSMContext
 from aiogram.types import Message
@@ -40,7 +41,16 @@ async def process_delete_good_id(message: Message, state: FSMContext):
                      f'В БД не найден'
             )
     else:
-        await message.answer(
-            text=f'<{message.text}> не является числом\n\n'
-                 f'Введите id ассистента в правильном формате для удаления'
-        )
+        try:
+            int(message.text)
+        except ValueError:
+            await message.answer(
+                text=f'{message.text} не является числом\n\n'
+                     f'Для удаления ассистента введите id в числовом формате'
+            )
+        except Exception as e:
+            print(f'Error: {e}')
+            await message.answer(
+                text=f'При обработке запроса произошла ошибка\n\n'
+                     f'Пожалуйста, повторите запрос еще раз или обратитесь в службу поддержки.'
+            )

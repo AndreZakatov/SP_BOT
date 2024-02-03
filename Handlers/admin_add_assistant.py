@@ -1,4 +1,5 @@
 import os
+import html
 
 from aiogram.fsm.context import FSMContext
 from aiogram.types import Message
@@ -37,12 +38,22 @@ async def process_add_good_id(message: Message, state: FSMContext):
             await state.clear()
         else:
             await message.answer(
-                text=f'Ассистент с ID: {message.text} уже в базе данных.'
+                text=f'Ассистент с ID: {html.unescape(message.text)} уже в базе данных.'
             )
     else:
-        await message.answer(
-            text=f'<{message.text}> не является числом\n\n'
-                 f'Введите id ассистента в правильном формате для добавления.'
-        )
+        try:
+            int(message.text)
+        except ValueError:
+            await message.answer(
+                text=f'{message.text} не является числом\n\n'
+                     f'Для добавления ассистента введите id в числовом формате'
+            )
+        except Exception as e:
+            print(f'Error: {e}')
+            await message.answer(
+                text=f'При обработке запроса произошла ошибка\n\n'
+                     f'Пожалуйста, повторите запрос еще раз или обратитесь в службу поддержки.'
+            )
+
 
 
