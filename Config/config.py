@@ -34,3 +34,4 @@ admin_ids_str = str(os.getenv('ADMIN_IDS')).replace('[', '').replace(']', '').re
 allowed_admin_ids = [int(admin_id) for admin_id in admin_ids_str.split()]
 assistant_ids_str = str(os.getenv('ASISTANT_IDS')).replace('[', '').replace(']', '').replace(',', '')
 allowed_assistant_ids = [int(admin_id) for admin_id in admin_ids_str.split()]
+print(allowed_admin_ids)

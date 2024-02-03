@@ -109,6 +109,13 @@ class Database:
         result = self.cursor.fetchone()
         return result is not None
 
+    def check_all_assisted(self):
+        self.cursor.execute("""
+        SELECT * FROM assistant
+        """)
+        result = self.cursor.fetchall()
+        return result
+
 
 if __name__ == "__main__":
     db = Database('sp_database.db')
