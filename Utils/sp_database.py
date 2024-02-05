@@ -116,6 +116,13 @@ class Database:
         result = self.cursor.fetchall()
         return result
 
+    def check_subscribed(self, telegram_id):
+        self.cursor.execute("""
+        SELECT * FROM subscriptions WHERE user_id = ?
+        """, (telegram_id,))
+        result = self.cursor.fetchone()
+        return result is not None
+
 
 if __name__ == "__main__":
     db = Database('sp_database.db')
