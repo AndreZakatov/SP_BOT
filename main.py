@@ -5,11 +5,13 @@ from aiogram import Bot, Dispatcher, F
 from aiogram.fsm.storage.memory import MemoryStorage
 
 from Config.config import Config, get_config
+from Handlers.parsing import process_parsing, process_good_url
 from Handlers.start_handler import get_start
 from Handlers.admin_add_assistant import process_add_assisted, process_add_good_id
 from Handlers.admin_delete_assisted import process_delete_assisted, process_delete_good_id
 from aiogram.filters import Command
 from State.register import Delete, InputId
+from State.parsing_state import UrlInput
 
 
 # Конфигурация логирования и запуск бота
@@ -33,6 +35,9 @@ async def main():
     # Удаление ассистента
     dp.message.register(process_delete_assisted, F.text == 'Удалить ассистента')
     dp.message.register(process_delete_good_id, Delete.delete)
+    # Выполнение парсинга
+    dp.message.register(process_parsing, Command(commands='parsing'))
+    dp.message.register(process_good_url, UrlInput.url)
 
     # Пропуск апдейтов и запуск пулинга
     await bot.delete_webhook(drop_pending_updates=True)
