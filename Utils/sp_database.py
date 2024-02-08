@@ -35,8 +35,7 @@ class Database:
                 user_id INTEGER,
                 status TEXT,
                 date_start DATETIME,
-                date_end DATETIME,
-                FOREIGN KEY (user_id) REFERENCES users (telegram_id)
+                date_end DATETIME
             )   
         """)
         self.conn.commit()
@@ -96,6 +95,20 @@ class Database:
             """, (telegram_id,))
         self.conn.commit()
 
+    def add_user_in_subscriptions(self, user_id, status, date_start, date_end, balance):
+        self.cursor.execute("""
+            INSERT INTO subscriptions (user_id, status, date_start, date_end, balance)
+            VALUES (?,?,?,?,?)
+            """, (user_id, status, date_start, date_end, balance))
+        self.conn.commit()
+
+    def check_balance(self, user_id):
+        self.cursor.execute("""
+        SELECT balance FROM subscriptions WHERE user_id = ? 
+        """, (user_id,))
+        result = self.cursor.fetchone()
+        return result
+
     def delete_assistant(self, telegram_id):
         self.cursor.execute("""
         DELETE FROM assistant WHERE assistant_id = ?
@@ -123,7 +136,21 @@ class Database:
         result = self.cursor.fetchone()
         return result is not None
 
+    def update_balance_subscriptions(self, user_id, balance):
+        self.cursor.execute("""
+        SELECT balance FROM subscriptions
+        WHERE user_id = ?
+        """, (user_id,))
+        current_balance = self.cursor.fetchone()[0]
+        new_balance = current_balance + balance
+
+        self.cursor.execute("""
+        UPDATE subscriptions
+        SET balance = ?
+        WHERE user_id = ?
+        """, (new_balance, user_id,))
+        self.conn.commit()
+
 
 if __name__ == "__main__":
     db = Database('sp_database.db')
-    db.create_all_table()

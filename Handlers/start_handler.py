@@ -34,9 +34,9 @@ async def get_start(message: Message, bot: Bot):
             await bot.send_message(message.from_user.id,
                                    text=f'Hello {message.from_user.first_name}\n\n'
                                         f'У вас не оформлена подписка для выполнения парсинга\n\n'
-                                        f'Давайте оплатим подписку', reply_markup=user_kb())
+                                        f'Давайте оформим подписку /to_pay_for')
         else:
             await bot.send_message(message.from_user.id,
                                    text=f'Hello {message.from_user.first_name}\n\n'
-                                        f'Ваша подписка активна',reply_markup=user_parsing_kb())
+                                        f'Ваша подписка активна', reply_markup=user_parsing_kb())
 

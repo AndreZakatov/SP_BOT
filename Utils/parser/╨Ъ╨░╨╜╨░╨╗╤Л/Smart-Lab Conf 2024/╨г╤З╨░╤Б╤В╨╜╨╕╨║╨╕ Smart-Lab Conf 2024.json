@@ -1,0 +1,565 @@
+{
+    "admins": null,
+    "users": {
+        "1933215297": {
+            "id": 1933215297,
+            "first_name": "Дирик",
+            "last_name": null,
+            "username": "pridengaxxx",
+            "phone": null,
+            "bot": false,
+            "deleted": false,
+            "scam": false
+        },
+        "5864569355": {
+            "id": 5864569355,
+            "first_name": "Химпром",
+            "last_name": null,
+            "username": null,
+            "phone": null,
+            "bot": false,
+            "deleted": false,
+            "scam": false
+        },
+        "5339724864": {
+            "id": 5339724864,
+            "first_name": "Evgen2308",
+            "last_name": null,
+            "username": "jey2308",
+            "phone": null,
+            "bot": false,
+            "deleted": false,
+            "scam": false
+        },
+        "627332050": {
+            "id": 627332050,
+            "first_name": "Мария",
+            "last_name": null,
+            "username": "mariia_masha_k",
+            "phone": null,
+            "bot": false,
+            "deleted": false,
+            "scam": false
+        },
+        "403422093": {
+            "id": 403422093,
+            "first_name": "Evgeniy",
+            "last_name": null,
+            "username": null,
+            "phone": null,
+            "bot": false,
+            "deleted": false,
+            "scam": false
+        },
+        "136817688": {
+            "id": 136817688,
+            "first_name": "Channel",
+            "last_name": null,
+            "username": "Channel_Bot",
+            "phone": null,
+            "bot": true,
+            "deleted": false,
+            "scam": false
+        },
+        "452314818": {
+            "id": 452314818,
+            "first_name": "Dmitriy",
+            "last_name": "Stepanov",
+            "username": "krendelidze",
+            "phone": null,
+            "bot": false,
+            "deleted": false,
+            "scam": false
+        },
+        "649580182": {
+            "id": 649580182,
+            "first_name": "Oleg",
+            "last_name": "Dubinskiy",
+            "username": null,
+            "phone": null,
+            "bot": false,
+            "deleted": false,
+            "scam": false
+        },
+        "446008845": {
+            "id": 446008845,
+            "first_name": "Татьяна",
+            "last_name": "Плихта",
+            "username": null,
+            "phone": null,
+            "bot": false,
+            "deleted": false,
+            "scam": false
+        },
+        "1087968824": {
+            "id": 1087968824,
+            "first_name": "Group",
+            "last_name": null,
+            "username": "GroupAnonymousBot",
+            "phone": null,
+            "bot": true,
+            "deleted": false,
+            "scam": false
+        },
+        "584776512": {
+            "id": 584776512,
+            "first_name": "RUMIT",
+            "last_name": null,
+            "username": "stimul82",
+            "phone": null,
+            "bot": false,
+            "deleted": false,
+            "scam": false
+        },
+        "6678340059": {
+            "id": 6678340059,
+            "first_name": "КуРоМи",
+            "last_name": null,
+            "username": null,
+            "phone": null,
+            "bot": false,
+            "deleted": false,
+            "scam": false
+        },
+        "1645844840": {
+            "id": 1645844840,
+            "first_name": "Developer",
+            "last_name": "of Projects",
+            "username": "tester37_trader",
+            "phone": null,
+            "bot": false,
+            "deleted": false,
+            "scam": false
+        },
+        "5029704218": {
+            "id": 5029704218,
+            "first_name": "F.I.R.E.",
+            "last_name": null,
+            "username": "SoluyanovAndrey",
+            "phone": null,
+            "bot": false,
+            "deleted": false,
+            "scam": false
+        },
+        "476428407": {
+            "id": 476428407,
+            "first_name": "Chaosbolt",
+            "last_name": null,
+            "username": "ChaosOfFaceroll",
+            "phone": null,
+            "bot": false,
+            "deleted": false,
+            "scam": false
+        },
+        "521714071": {
+            "id": 521714071,
+            "first_name": "Dmitrii",
+            "last_name": "Sergeev",
+            "username": "yutakasa",
+            "phone": null,
+            "bot": false,
+            "deleted": false,
+            "scam": false
+        },
+        "1262499545": {
+            "id": 1262499545,
+            "first_name": "Konstantin",
+            "last_name": "P",
+            "username": null,
+            "phone": null,
+            "bot": false,
+            "deleted": false,
+            "scam": false
+        },
+        "337588362": {
+            "id": 337588362,
+            "first_name": "Алексей",
+            "last_name": "Колосов",
+            "username": "Cronion_trader",
+            "phone": null,
+            "bot": false,
+            "deleted": false,
+            "scam": false
+        },
+        "1159671468": {
+            "id": 1159671468,
+            "first_name": "Лада",
+            "last_name": null,
+            "username": null,
+            "phone": null,
+            "bot": false,
+            "deleted": false,
+            "scam": false
+        },
+        "446578168": {
+            "id": 446578168,
+            "first_name": "жора",
+            "last_name": "тихонов",
+            "username": null,
+            "phone": null,
+            "bot": false,
+            "deleted": false,
+            "scam": false
+        },
+        "27001212": {
+            "id": 27001212,
+            "first_name": "A",
+            "last_name": "K",
+            "username": "knazyok",
+            "phone": null,
+            "bot": false,
+            "deleted": false,
+            "scam": false
+        },
+        "616308447": {
+            "id": 616308447,
+            "first_name": "Анна",
+            "last_name": "Леонова",
+            "username": "Aniketochka",
+            "phone": null,
+            "bot": false,
+            "deleted": false,
+            "scam": false
+        },
+        "1287368205": {
+            "id": 1287368205,
+            "first_name": "Александр",
+            "last_name": "Шадрин",
+            "username": "AlexandrShadrin1",
+            "phone": null,
+            "bot": false,
+            "deleted": false,
+            "scam": false
+        },
+        "1379939580": {
+            "id": 1379939580,
+            "first_name": "Евгений",
+            "last_name": "О",
+            "username": null,
+            "phone": null,
+            "bot": false,
+            "deleted": false,
+            "scam": false
+        },
+        "380385440": {
+            "id": 380385440,
+            "first_name": "Анна",
+            "last_name": null,
+            "username": null,
+            "phone": null,
+            "bot": false,
+            "deleted": false,
+            "scam": false
+        },
+        "404795782": {
+            "id": 404795782,
+            "first_name": "Aleksandr",
+            "last_name": "Shiian",
+            "username": "ashiian",
+            "phone": "79268643104",
+            "bot": false,
+            "deleted": false,
+            "scam": false
+        },
+        "364806943": {
+            "id": 364806943,
+            "first_name": "Алеkсандр П.",
+            "last_name": null,
+            "username": null,
+            "phone": null,
+            "bot": false,
+            "deleted": false,
+            "scam": false
+        },
+        "683954183": {
+            "id": 683954183,
+            "first_name": "Яна",
+            "last_name": null,
+            "username": null,
+            "phone": null,
+            "bot": false,
+            "deleted": false,
+            "scam": false
+        },
+        "1968480007": {
+            "id": 1968480007,
+            "first_name": "Димка",
+            "last_name": "Хикикоморин",
+            "username": null,
+            "phone": null,
+            "bot": false,
+            "deleted": false,
+            "scam": false
+        },
+        "424206464": {
+            "id": 424206464,
+            "first_name": "Oleg",
+            "last_name": "Selivanov",
+            "username": "OSelivanov",
+            "phone": null,
+            "bot": false,
+            "deleted": false,
+            "scam": false
+        },
+        "1307965276": {
+            "id": 1307965276,
+            "first_name": "Okka",
+            "last_name": null,
+            "username": "Okka8",
+            "phone": null,
+            "bot": false,
+            "deleted": false,
+            "scam": false
+        },
+        "1574790765": {
+            "id": 1574790765,
+            "first_name": "Людмила",
+            "last_name": null,
+            "username": null,
+            "phone": null,
+            "bot": false,
+            "deleted": false,
+            "scam": false
+        },
+        "385292630": {
+            "id": 385292630,
+            "first_name": "Артём",
+            "last_name": null,
+            "username": "Artem_Putin",
+            "phone": null,
+            "bot": false,
+            "deleted": false,
+            "scam": false
+        },
+        "421649304": {
+            "id": 421649304,
+            "first_name": "Svyatoslav",
+            "last_name": "Lebedev",
+            "username": "Svyatoslav_Lebedev",
+            "phone": null,
+            "bot": false,
+            "deleted": false,
+            "scam": false
+        },
+        "1012413332": {
+            "id": 1012413332,
+            "first_name": "𝕾𝖙𝖆𝖓𝖎𝖘𝖑𝖆𝖛 𝕶𝖗.💡",
+            "last_name": null,
+            "username": "tom_volts",
+            "phone": null,
+            "bot": false,
+            "deleted": false,
+            "scam": false
+        },
+        "97754365": {
+            "id": 97754365,
+            "first_name": "Olga",
+            "last_name": "Kobzareva",
+            "username": null,
+            "phone": null,
+            "bot": false,
+            "deleted": false,
+            "scam": false
+        },
+        "1956387819": {
+            "id": 1956387819,
+            "first_name": "Guti",
+            "last_name": null,
+            "username": "AZguti",
+            "phone": null,
+            "bot": false,
+            "deleted": false,
+            "scam": false
+        },
+        "992925642": {
+            "id": 992925642,
+            "first_name": "TrumPliN",
+            "last_name": null,
+            "username": null,
+            "phone": null,
+            "bot": false,
+            "deleted": false,
+            "scam": false
+        },
+        "839541457": {
+            "id": 839541457,
+            "first_name": ".",
+            "last_name": null,
+            "username": "anglobro",
+            "phone": null,
+            "bot": false,
+            "deleted": false,
+            "scam": false
+        },
+        "482515318": {
+            "id": 482515318,
+            "first_name": "Gleb",
+            "last_name": null,
+            "username": "glebmalagin",
+            "phone": null,
+            "bot": false,
+            "deleted": false,
+            "scam": false
+        },
+        "721618631": {
+            "id": 721618631,
+            "first_name": "Nikita",
+            "last_name": "Popov",
+            "username": "masterpopov",
+            "phone": null,
+            "bot": false,
+            "deleted": false,
+            "scam": false
+        },
+        "595933069": {
+            "id": 595933069,
+            "first_name": "Екатерина",
+            "last_name": null,
+            "username": "KatproPR",
+            "phone": null,
+            "bot": false,
+            "deleted": false,
+            "scam": false
+        },
+        "418982860": {
+            "id": 418982860,
+            "first_name": "@LoraHispano",
+            "last_name": null,
+            "username": "loraHispano",
+            "phone": null,
+            "bot": false,
+            "deleted": false,
+            "scam": false
+        },
+        "343226578": {
+            "id": 343226578,
+            "first_name": "Tatiana",
+            "last_name": "Lebedeva",
+            "username": "Tatiana_LMS",
+            "phone": null,
+            "bot": false,
+            "deleted": false,
+            "scam": false
+        },
+        "723946325": {
+            "id": 723946325,
+            "first_name": "Evgeniy",
+            "last_name": null,
+            "username": "talevgserg",
+            "phone": null,
+            "bot": false,
+            "deleted": false,
+            "scam": false
+        },
+        "766306629": {
+            "id": 766306629,
+            "first_name": "Georg",
+            "last_name": "Man",
+            "username": "georgmanov",
+            "phone": null,
+            "bot": false,
+            "deleted": false,
+            "scam": false
+        },
+        "1125560680": {
+            "id": 1125560680,
+            "first_name": "Е",
+            "last_name": null,
+            "username": null,
+            "phone": null,
+            "bot": false,
+            "deleted": false,
+            "scam": false
+        },
+        "595235584": {
+            "id": 595235584,
+            "first_name": "Валерия",
+            "last_name": null,
+            "username": "lavernin",
+            "phone": null,
+            "bot": false,
+            "deleted": false,
+            "scam": false
+        },
+        "957823935": {
+            "id": 957823935,
+            "first_name": "Dima Pushkin",
+            "last_name": null,
+            "username": null,
+            "phone": null,
+            "bot": false,
+            "deleted": false,
+            "scam": false
+        },
+        "303272045": {
+            "id": 303272045,
+            "first_name": "Dmitriy",
+            "last_name": "Mozhaev",
+            "username": "Howle",
+            "phone": null,
+            "bot": false,
+            "deleted": false,
+            "scam": false
+        },
+        "5092469871": {
+            "id": 5092469871,
+            "first_name": "Олег Широкий",
+            "last_name": "Олег Широкий",
+            "username": "oleqshirokii",
+            "phone": null,
+            "bot": false,
+            "deleted": false,
+            "scam": false
+        },
+        "5258809944": {
+            "id": 5258809944,
+            "first_name": "Семён",
+            "last_name": null,
+            "username": null,
+            "phone": null,
+            "bot": false,
+            "deleted": false,
+            "scam": false
+        },
+        "717036873": {
+            "id": 717036873,
+            "first_name": "Мария",
+            "last_name": "Иванова",
+            "username": "Ivanova_M_V",
+            "phone": null,
+            "bot": false,
+            "deleted": false,
+            "scam": false
+        },
+        "258877150": {
+            "id": 258877150,
+            "first_name": "Марат",
+            "last_name": null,
+            "username": "MARAT063",
+            "phone": null,
+            "bot": false,
+            "deleted": false,
+            "scam": false
+        },
+        "246061289": {
+            "id": 246061289,
+            "first_name": "Mikhail",
+            "last_name": "Ershov",
+            "username": "mershov1",
+            "phone": null,
+            "bot": false,
+            "deleted": false,
+            "scam": false
+        },
+        "302604180": {
+            "id": 302604180,
+            "first_name": "Roman",
+            "last_name": null,
+            "username": null,
+            "phone": null,
+            "bot": false,
+            "deleted": false,
+            "scam": false
+        }
+    }
+}

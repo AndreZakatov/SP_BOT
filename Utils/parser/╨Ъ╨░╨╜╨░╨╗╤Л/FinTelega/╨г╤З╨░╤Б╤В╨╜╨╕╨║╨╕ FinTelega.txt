@@ -1,0 +1,46 @@
+Пользователи:
+{'id': 170756359, 'first_name': 'Виктор', 'last_name': None, 'username': 'onewave', 'phone': None, 'bot': False, 'deleted': False, 'scam': False}
+{'id': 1214955828, 'first_name': 'Закир', 'last_name': None, 'username': 'zakir7233', 'phone': None, 'bot': False, 'deleted': False, 'scam': False}
+{'id': 2059309035, 'first_name': 'Ivan', 'last_name': None, 'username': None, 'phone': None, 'bot': False, 'deleted': False, 'scam': False}
+{'id': 495211388, 'first_name': 'Люция', 'last_name': 'Калинина', 'username': 'LyutdKalina', 'phone': None, 'bot': False, 'deleted': False, 'scam': False}
+{'id': 411406910, 'first_name': 'Владислав', 'last_name': None, 'username': 'OxVLadiSlaVxO', 'phone': None, 'bot': False, 'deleted': False, 'scam': False}
+{'id': 6184269328, 'first_name': 'Р.', 'last_name': 'Tатьяна.', 'username': None, 'phone': None, 'bot': False, 'deleted': False, 'scam': False}
+{'id': 493928723, 'first_name': 'Надежда Ситник', 'last_name': None, 'username': 'Nadya_Sitnik', 'phone': '353830980288', 'bot': False, 'deleted': False, 'scam': False}
+{'id': 449916969, 'first_name': 'Александр', 'last_name': 'Русаловский', 'username': 'Rusalovsky_Alexander', 'phone': None, 'bot': False, 'deleted': False, 'scam': False}
+{'id': 5413200702, 'first_name': "a'2k", 'last_name': None, 'username': None, 'phone': None, 'bot': False, 'deleted': False, 'scam': False}
+{'id': 431593240, 'first_name': 'Михаил Алексеевич', 'last_name': None, 'username': 'silvestor77', 'phone': None, 'bot': False, 'deleted': False, 'scam': False}
+{'id': 698599988, 'first_name': 'Den', 'last_name': None, 'username': None, 'phone': None, 'bot': False, 'deleted': False, 'scam': False}
+{'id': 667581845, 'first_name': 'Alexey', 'last_name': 'Zolotnitckii', 'username': 'alexeyzolotnitsky', 'phone': None, 'bot': False, 'deleted': False, 'scam': False}
+{'id': 704158623, 'first_name': 'Артем', 'last_name': None, 'username': 'artemlbk', 'phone': None, 'bot': False, 'deleted': False, 'scam': False}
+{'id': 136817688, 'first_name': 'Channel', 'last_name': None, 'username': 'Channel_Bot', 'phone': None, 'bot': True, 'deleted': False, 'scam': False}
+{'id': 693381751, 'first_name': 'Anatoliy', 'last_name': None, 'username': None, 'phone': None, 'bot': False, 'deleted': False, 'scam': False}
+{'id': 702806853, 'first_name': 'Alena Kibler Финансовый Советник', 'last_name': None, 'username': 'KiblerFinance', 'phone': None, 'bot': False, 'deleted': False, 'scam': False}
+{'id': 295814727, 'first_name': 'Serhii', 'last_name': 'Makarenko', 'username': 'serg_fint', 'phone': None, 'bot': False, 'deleted': False, 'scam': False}
+{'id': 5108756137, 'first_name': 'Sergei', 'last_name': None, 'username': 'mobile287', 'phone': None, 'bot': False, 'deleted': False, 'scam': False}
+{'id': 5210025680, 'first_name': 'Ma', 'last_name': 'G', 'username': 'atlantida306', 'phone': None, 'bot': False, 'deleted': False, 'scam': False}
+{'id': 1337462021, 'first_name': 'Игорь', 'last_name': None, 'username': 'Ihor_hrubrin', 'phone': None, 'bot': False, 'deleted': False, 'scam': False}
+{'id': 318996739, 'first_name': 'Александр', 'last_name': 'Горбатенко', 'username': 'gorbatenko_alexander', 'phone': None, 'bot': False, 'deleted': False, 'scam': False}
+{'id': 5380856133, 'first_name': 'Flor S', 'last_name': None, 'username': None, 'phone': None, 'bot': False, 'deleted': False, 'scam': False}
+{'id': 1972125452, 'first_name': 'Denis', 'last_name': None, 'username': None, 'phone': None, 'bot': False, 'deleted': False, 'scam': False}
+{'id': 475296437, 'first_name': 'Vitalii', 'last_name': None, 'username': 'fxinvestorv', 'phone': None, 'bot': False, 'deleted': False, 'scam': False}
+{'id': 2127690210, 'first_name': 'Murat', 'last_name': 'Shogenov', 'username': None, 'phone': None, 'bot': False, 'deleted': False, 'scam': False}
+{'id': 712898188, 'first_name': 'Нурлия', 'last_name': None, 'username': None, 'phone': None, 'bot': False, 'deleted': False, 'scam': False}
+{'id': 6496384153, 'first_name': 'ded', 'last_name': 'banzai🥷', 'username': None, 'phone': None, 'bot': False, 'deleted': False, 'scam': False}
+{'id': 1375650185, 'first_name': 'Тарас', 'last_name': 'Хома', 'username': None, 'phone': None, 'bot': False, 'deleted': False, 'scam': False}
+{'id': 515115967, 'first_name': 'Dina', 'last_name': None, 'username': None, 'phone': None, 'bot': False, 'deleted': False, 'scam': False}
+{'id': 416295880, 'first_name': 'Ruslan', 'last_name': None, 'username': None, 'phone': None, 'bot': False, 'deleted': False, 'scam': False}
+{'id': 6710158630, 'first_name': '️YA️', 'last_name': None, 'username': None, 'phone': None, 'bot': False, 'deleted': False, 'scam': False}
+{'id': 156444159, 'first_name': 'Alexander', 'last_name': 'Buldakov', 'username': 'avbuldakov', 'phone': None, 'bot': False, 'deleted': False, 'scam': False}
+{'id': 1211800736, 'first_name': 'Egor', 'last_name': 'Gaykevich', 'username': None, 'phone': None, 'bot': False, 'deleted': False, 'scam': False}
+{'id': 590992464, 'first_name': 'Andrey', 'last_name': 'Soldatenko', 'username': 'asoldatenko', 'phone': None, 'bot': False, 'deleted': False, 'scam': False}
+{'id': 5982892908, 'first_name': 'Илья', 'last_name': None, 'username': 'ilyarmulke', 'phone': None, 'bot': False, 'deleted': False, 'scam': False}
+{'id': 756972139, 'first_name': 'Denys', 'last_name': 'Babych', 'username': 'DenBabych', 'phone': None, 'bot': False, 'deleted': False, 'scam': False}
+{'id': 911619256, 'first_name': 'F', 'last_name': 'L', 'username': 'flexman111', 'phone': None, 'bot': False, 'deleted': False, 'scam': False}
+{'id': 6258518994, 'first_name': 'Ruslan', 'last_name': '*****', 'username': None, 'phone': None, 'bot': False, 'deleted': False, 'scam': False}
+{'id': 6232818679, 'first_name': 'Andre', 'last_name': 'Mr', 'username': 'ethlogin', 'phone': None, 'bot': False, 'deleted': False, 'scam': False}
+{'id': 742399136, 'first_name': 'ليكسا', 'last_name': None, 'username': 'krement23', 'phone': None, 'bot': False, 'deleted': False, 'scam': False}
+{'id': 810886421, 'first_name': 'Inessa', 'last_name': None, 'username': 'sheinessa', 'phone': None, 'bot': False, 'deleted': False, 'scam': False}
+{'id': 221463014, 'first_name': 'Antonina', 'last_name': 'Kiianovska', 'username': 'Kiianovska', 'phone': None, 'bot': False, 'deleted': False, 'scam': False}
+{'id': 369311871, 'first_name': 'Станислав', 'last_name': 'Танцурин', 'username': 'StanCoachSozo', 'phone': None, 'bot': False, 'deleted': False, 'scam': False}
+{'id': 1087968824, 'first_name': 'Group', 'last_name': None, 'username': 'GroupAnonymousBot', 'phone': None, 'bot': True, 'deleted': False, 'scam': False}
+{'id': 448189267, 'first_name': 'Ilya', 'last_name': None, 'username': 'ilya_yaro', 'phone': None, 'bot': False, 'deleted': False, 'scam': False}

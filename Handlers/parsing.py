@@ -30,4 +30,3 @@ async def process_good_url(message: Message, bot: Bot):
                                text='Произошла ошибка\n\n'
                                     'Проверьте чтобы ссылка на ресурс начиналапсь c http:// или https://:\n\n'
                                     'Или можете обратиться в службу поддержки')
-

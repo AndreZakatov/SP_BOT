@@ -3,13 +3,15 @@ import logging
 
 from aiogram import Bot, Dispatcher, F
 from aiogram.fsm.storage.memory import MemoryStorage
+from aiogram.filters import Command
 
 from Config.config import Config, get_config
 from Handlers.parsing import process_parsing, process_good_url
 from Handlers.start_handler import get_start
 from Handlers.admin_add_assistant import process_add_assisted, process_add_good_id
 from Handlers.admin_delete_assisted import process_delete_assisted, process_delete_good_id
-from aiogram.filters import Command
+from Handlers.subscribe import process_payment, process_add_5000, process_add_10000
+
 from State.register import Delete, InputId
 from State.parsing_state import UrlInput
 
@@ -38,6 +40,12 @@ async def main():
     # Выполнение парсинга
     dp.message.register(process_parsing, Command(commands='parsing'))
     dp.message.register(process_good_url, UrlInput.url)
+    dp.callback_query.register(process_parsing, lambda c: c.data == 'pars')
+    # Выполнение подписки и оплаты
+    dp.message.register(process_payment, Command(commands='to_pay_for'))
+    dp.callback_query.register(process_add_5000, lambda x: x.data == 'pay_5000')
+    dp.callback_query.register(process_add_10000, lambda x: x.data == 'pay_10000')
+
 
     # Пропуск апдейтов и запуск пулинга
     await bot.delete_webhook(drop_pending_updates=True)
