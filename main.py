@@ -47,7 +47,7 @@ async def main():
     dp.callback_query.register(process_add_10000, lambda x: x.data == 'pay_10000')
 
 
-    # Пропуск апдейтов и запуск пулинга
+    # Пропуск апдейтов и запуск пулинга    зз
     await bot.delete_webhook(drop_pending_updates=True)
     await dp.start_polling(bot)
 
