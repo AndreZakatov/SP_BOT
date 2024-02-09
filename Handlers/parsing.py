@@ -61,7 +61,7 @@ async def process_good_url(message: Message, bot: Bot, state: FSMContext):
             await bot.send_message(message.from_user.id, text='Заявка принята. Начинаю сбор информации.')
 
             # Здесь вызывайте вашу функцию для сбора информации
-            await collect_chat_information(api_id, api_hash, session, url)
+            await collect_chat_information(api_id, api_hash, session, url, users)
 
         elif link_type == 'url':
             await bot.send_message(message.from_user.id, text='Обработка открытой ссылки')

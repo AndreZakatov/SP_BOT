@@ -256,9 +256,4 @@ def list_users(*args):
     return users
 
 
-async def main():
-    result = await check_chat(chat='/liceum3corp3')
-    print(result)
 
-
-asyncio.run(main())

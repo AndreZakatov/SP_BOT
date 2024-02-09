@@ -6,7 +6,7 @@ import asyncio
 from my_functions import *
 
 
-def collect_chat_information(channel_type, channel_title, members, admins):
+def collect_chat_information(channel_type, channel_title, members, admins, users):
     # Заменяем запрещенные символы в названии канала
     for x in ['\\', '|', '"', '/', ':', '?', '*', '<', '>']:
         channel_title = channel_title.replace(x, ' ')
